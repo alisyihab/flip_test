@@ -1,6 +1,6 @@
 context('task-1', () => {
   beforeEach(() => {
-    cy.visit('https://192.168.1.24:5000/');
+    cy.visit('http://localhost:5000/');
     cy.server();
     cy.fixture("data_transaction")
       .as('data')
