@@ -1,0 +1,24 @@
+{
+  "name": "flip_test",
+  "version": "1.0.0",
+  "description": "Tecnical Test QA",
+  "main": "index.js",
+  "scripts": {
+    "delete:reportFolder": "rm -rf mochawesome-report/",
+    "test:cli": "yarn run delete:reportFolder && cypress run",
+    "merge:reports": "mochawesome-merge mochawesome-report/*.json > cypress-combined-report.json",
+    "create:html:report": "yarn run merge:reports && marge --reportDir TestReport cypress-combined-report.json",
+    "cypress-open": "./node_modules/.bin/cypress open"
+  },
+  "repository": "git@github.com:alisyihab/flip_test.git",
+  "author": "alisyihab <ali.syihab@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cypress": "^7.4.0",
+    "cypress-xpath": "^1.6.2",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "serve": "^11.3.2"
+  }
+}
