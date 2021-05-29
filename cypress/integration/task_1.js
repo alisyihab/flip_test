@@ -12,11 +12,11 @@ context('task-1', () => {
   it('Check row 1', function () {
     cy.get('tbody #row1').each(($el) => {
       cy.wrap($el).within(() => {
-        cy.get('td').eq(0).should('have.text', this.data[0].id)
         cy.get('td').eq(1).should('have.text', this.data[0].username)
         cy.get('td').eq(2).should('have.text', this.data[0].source_bank)
         cy.get('td').eq(3).should('have.text', this.data[0].destination_bank)
         cy.get('td').eq(4).should('have.text', this.data[0].amount)
+        cy.get('td').eq(0).should('have.text', this.data[0].id)
       })
     })
   });
@@ -49,10 +49,10 @@ context('task-1', () => {
     cy.get('tbody #row4').each(($el) => {
       cy.wrap($el).within(() => {
         cy.get('td').eq(0).should('have.text', this.data[3].id)
-        cy.get('td').eq(1).should('have.text', this.data[3].username)
         cy.get('td').eq(2).should('have.text', this.data[3].source_bank)
         cy.get('td').eq(3).should('have.text', this.data[3].destination_bank)
         cy.get('td').eq(4).should('have.text', this.data[3].amount)
+        cy.get('td').eq(1).should('have.text', this.data[3].username)
       })
     })
   });
@@ -61,10 +61,10 @@ context('task-1', () => {
     cy.get('tbody #row5').each(($el) => {
       cy.wrap($el).within(() => {
         cy.get('td').eq(0).should('have.text', this.data[4].id)
-        cy.get('td').eq(1).should('have.text', this.data[4].username)
         cy.get('td').eq(2).should('have.text', this.data[4].source_bank)
         cy.get('td').eq(3).should('have.text', this.data[4].destination_bank)
         cy.get('td').eq(4).should('have.text', this.data[4].amount)
+        cy.get('td').eq(1).should('have.text', this.data[4].username)
       })
     })
   });

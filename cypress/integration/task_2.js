@@ -1,6 +1,6 @@
 context('task-2 - get element by xpath & attribute', () => {
   beforeEach(() => {
-    cy.visit('https://flip.id')
+    cy.visit('https://flip.id/')
   })
 
   //assert text by xpath

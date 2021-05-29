@@ -18,20 +18,20 @@
     "username": "Fulan",
     "source_bank": "Mandiri",
     "destination_bank": "BCA",
-    "amount": "Rp 4, 333,011"
+    "amount": "Rp 4,333,011"
   },
   {
     "id": "110",
     "username": "Sri",
     "source_bank": "BNI",
     "destination_bank": "BSI",
-    "amount": "Rp 3, 000,000"
+    "amount": "Rp 3,000,000"
   },
   {
     "id": "111",
     "username": "Bambang",
     "source_bank": "BCA",
     "destination_bank": "BSI",
-    "amount": "Rp 1, 500,000"
+    "amount": "Rp 1,500,000"
   }
 ]
