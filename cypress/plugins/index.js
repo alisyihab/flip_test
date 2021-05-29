@@ -17,6 +17,12 @@
  */
 // eslint-disable-next-line no-unused-vars
 module.exports = (on, config) => {
-  // `on` is used to hook into various events Cypress emits
-  // `config` is the resolved Cypress config
-}
+  on('before:browser:launch', (browser = {}, args) => {
+    console.log(config, browser, args);
+    if (browser.name === 'chrome' && browser.name === 'firefox') {
+      args.push("--disable-features=CrossSiteDocumentBlockingIfIsolating,CrossSiteDocumentBlockingAlways,IsolateOrigins,site-per-process");
+      args.push("--load-extension=cypress/extensions/Ignore-X-Frame-headers_v1.1");
+    }
+    return args;
+  });
+};

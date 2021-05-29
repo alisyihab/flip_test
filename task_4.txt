@@ -1,0 +1,5 @@
+hal yang saya lakukan apabila saya merupakan satu - satunya QA yang berada di suatu perusahaan :
+
+- Membuat list daftar test yg critical (mengurutkan prioritas)
+- Eksekusi test cases dan automated test script.
+- Re-testing sampai software sesuai dengan requirement.
